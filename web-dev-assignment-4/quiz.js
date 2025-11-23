@@ -7,7 +7,7 @@ const quizQuestions = [
     { question: "Which language is used for web development?", answer: "javascript" }
 ];
 
-// Function to run the quiz
+//Function to run the quiz
 function runQuiz() {
     let score = 0; // Initialize score
 
@@ -15,7 +15,7 @@ function runQuiz() {
         // Take user input
         let userAnswer = prompt(quizQuestions[i].question);
 
-        // Normalize answer (case-insensitive and trimmed)
+        // Normalize answer 
         if (userAnswer && userAnswer.toLowerCase().trim() === quizQuestions[i].answer.toLowerCase().trim()) {
             alert("Correct");
             score++;
@@ -30,3 +30,4 @@ function runQuiz() {
 
 // Run the quiz
 runQuiz();
+
